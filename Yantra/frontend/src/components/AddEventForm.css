@@ -1,0 +1,151 @@
+/* AddEvent.css */
+
+.form-container {
+    width: 800px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin-left: 20px;
+    background-color: white;
+    animation: slideInRight 2s forwards ease-in-out; /* Animation definition with 4-second duration and ease-in-out timing function */
+    opacity: 0; /* Start with opacity 0 */
+}
+
+.container h2 {
+    margin-top : 10px;
+    margin-left: 50px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.container h3 {
+    margin-top: 10px;
+    margin-left: 50px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.form-container p {
+    margin-top: 10px;
+    font-size: 12px;
+    color:red;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group input[type="date"] {
+    width: calc(100% - 16px);
+    /* Adjust for date input's default arrow */
+}
+
+.form-group button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color: #0056b3;
+}
+.image-container{
+    width :300px;
+    animation: slideInLeft 2s forwards ease-in-out; /* Animation definition with 4-second duration and ease-in-out timing function */
+    opacity: 0; /* Start with opacity 0 */
+}
+.image{
+    height:200px;
+    margin-bottom: 50px;
+}
+.image-seperate{
+    margin-left:25px;;
+    margin-top:20px;
+    width:500px;
+    height: 200px;
+    animation: slideInUp 2s forwards ease-in-out; /* Animation definition with 4-second duration and ease-in-out timing function */
+    opacity: 0; /* Start with opacity 0 */
+}
+.row2 {
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+  
+  
+  @keyframes slideInUp {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }
+  @keyframes slideInLeft {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  }
+  @keyframes slideInRight {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  }
+
+  body {
+    
+    background: linear-gradient(-45deg, #52eee1, #23a6d5, #3ce7d6, #23d53e);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  @keyframes fadeIn {
+    to {
+      opacity: 1; /* Fade in completely */
+    }
+  }
+  
